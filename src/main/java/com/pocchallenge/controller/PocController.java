@@ -16,6 +16,7 @@ public class PocController {
 
     @GetMapping("/{page}")
     public String getList(@PathVariable Integer page) {
+
         return clientChallange.getNumbers(page);
     }
 }
